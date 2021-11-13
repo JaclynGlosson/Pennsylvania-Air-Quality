@@ -28,3 +28,18 @@ We used the "Historical Air Pollution" data, which requires the inputs of latitu
 - Sulphur dioxide (SO2)
 - Ammonia (NH3)
 - Particulates (PM2.5 and PM10)
+
+AQI and other gasses are interpreted as follows:
+
+![Air Quality measures](https://github.com/JaclynGlosson/Pennsylvania-Air-Quality/blob/0873d530e490c7cccf99086051f1702477887fd2/images/AQI%20Table.PNG)
+
+
+<b>[US Census:](https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html)<br> </b>
+We used 2019 Population Estimates (as 2020 estimates were unavailible), which requires the inputs of census county and state codes retrieved from [census.gov](https://www2.census.gov/geo/docs/reference/codes/files/st42_pa_cou.txt). The request returns a nested list with county name, population, and density.
+
+<b>[Latitudes and Longitudes:](https://data.pa.gov/Government-That-Works/County-Latitude-Longitude-Points-For-Each-County-S/dvjn-d63b)<br> </b>
+In order to retrieve all PA county data from OpenWeather, we looped through a list of latitudes and longitudes.
+
+<b>[Census County Codes:](https://www2.census.gov/geo/docs/reference/codes/files/st42_pa_cou.txt)<br> </b>
+In order to retrieve all PA county data from census.gov, we looped through a list of census county codes.
+
